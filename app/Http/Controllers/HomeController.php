@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function __invoke()
+    public function __invoke()// landing e-commerce
     {
-        return 'my landing page';
+        return view ("product.home");
     }
     //
 }
