@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
 Route::get('/', HomeController::class);
-Route::get('/products', [ProductController::class . 'index']);
-    //mostrara todos los productos
-   
 
-Route::get('/product/create', [ProductController::class . 'create']);
-Route::get('/product/{idProduct}',[ProductController::class . 'show']);
+Route::prefix("product")->controller(ProductController::class)->group(function () {
+    Route::get('/', 'index');
+    Route::get('/create', 'create');
+    Route::get('/{idProduct}', 'show');
+});
 
