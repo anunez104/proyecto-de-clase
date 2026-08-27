@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>AutoMarket - Inicio</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-</head>
-<body>
-    <header>
-        <h1>AutoMarket</h1>
-        <a href="/product" class="btn">Ver Catálogo</a>
-    </header>
 
     <main class="container">
         <section class="hero">
@@ -30,5 +18,3 @@
             </div>
         </div>
     </main>
-</body>
-</html>

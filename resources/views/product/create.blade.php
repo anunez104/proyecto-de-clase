@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoMarket - Publicar Vehículo</title>
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-</head>
-<body>
-    <header>
-        <h1>AutoMarket</h1>
-        <a href="/product">← Volver al catálogo</a>
-    </header>
+@extends('layout.app')
 
-    <main class="container">
+@section('content')
+<main class="container">
         <div class="card">
             <h2>Publicar Nuevo Vehículo</h2>
             <form action="/product" method="POST">
@@ -33,5 +22,4 @@
             </form>
         </div>
     </main>
-</body>
-</html>
+@endsection
