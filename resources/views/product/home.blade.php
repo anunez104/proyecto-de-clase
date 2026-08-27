@@ -1,4 +1,5 @@
-
+@extends('layout.app')
+@section('content')
     <main class="container">
         <section class="hero">
             <h2>El Auto de tus Sueños Está Aquí</h2>
@@ -18,3 +19,4 @@
             </div>
         </div>
     </main>
+ @endsection
