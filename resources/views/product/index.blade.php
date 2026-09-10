@@ -17,6 +17,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($listaDeProductos as $producto)
                     <tr>
                         <td>#1</td>
                         <td><strong>Sports Car GT</strong></td>
@@ -24,24 +25,10 @@
                         <td style="color: var(--primary); font-weight: bold;">$45,000</td>
                         <td><a href="/product/1" class="btn" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">Ver Ficha</a></td>
                     </tr>
-                    <tr>
-                        <td>#2</td>
-                        <td><strong>SUV Family 2024</strong></td>
-                        <td>Camioneta</td>
-                        <td style="color: var(--primary); font-weight: bold;">$32,000</td>
-                        <td><a href="/product/2" class="btn" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">Ver Ficha</a></td>
-                    </tr>
-                    <tr>
-                        <td>#3</td>
-                        <td><strong>Sedan Executive</strong></td>
-                        <td>Sedán</td>
-                        <td style="color: var(--primary); font-weight: bold;">$28,000</td>
-                        <td><a href="/product/3" class="btn" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">Ver Ficha</a></td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
     </main>
-</body>
-</html>
+
 @endsection
